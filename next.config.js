@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+// const nextConfig = {};
 
-module.exports = nextConfig
+// module.exports = nextConfig;
+const withLess = require("next-less");
+
+module.exports = withLess({
+  lessLoaderOptions: {},
+});

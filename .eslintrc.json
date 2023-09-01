@@ -1,3 +1,69 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "jest": true,
+    "es6": true
+  },
+  "extends": "next/core-web-vitals",
+  "plugins": ["simple-import-sort", "import"],
+  "rules": {
+    "max-lines-per-function": "off",
+    "max-len": [
+      1,
+      {
+        "code": 120
+      }
+    ],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "jsx-a11y/no-autofocus": "warn",
+    "react/no-unused-prop-types": "warn",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "no-underscore-dangle": "off",
+    "react/forbid-prop-types": "off",
+    "no-restricted-syntax": "off",
+    "react/static-property-placement": "off",
+    "react/sort-comp": "off",
+    "camelcase": "warn",
+    "prefer-destructuring": "off",
+    "no-void": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "func-names": "off",
+    "max-classes-per-file": "off",
+    "react/require-default-props": 0,
+    "react/state-in-constructor": "warn",
+    "no-nested-ternary": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "class-methods-use-this": "off",
+    "@typescript-eslint/ban-types": "off",
+    "default-case": "off",
+    "no-return-assign": "off",
+    "promise/param-names": "off",
+    "no-promise-executor-return": "off",
+    "no-continue": "off",
+    "lines-between-class-members": "off",
+    "simple-import-sort/imports": "warn",
+    "sort-imports": "off",
+    "import/order": "off"
+  },
+  "globals": {
+    "UndefinedKeys": true,
+    "ExtractOptional": true,
+    "ExtractRequired": true,
+    "ExtractType": true,
+    "NotUndefinedKey": true,
+    "Parse": true,
+    "DefaultProps": true,
+    "JSX": true,
+    "ModalDefaultRef": true,
+    "logger": true,
+    "Console": true
+  }
 }
