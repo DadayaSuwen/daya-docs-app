@@ -1,12 +1,13 @@
 {
   "env": {
-    "jest": true,
-    "es6": true
+    "jest": true
   },
   "extends": "next/core-web-vitals",
   "plugins": ["simple-import-sort", "import"],
   "rules": {
     "max-lines-per-function": "off",
+    "import/order": "off",
+    "import/newline-after-import": "off",
     "max-len": [
       1,
       {
@@ -48,10 +49,7 @@
     "promise/param-names": "off",
     "no-promise-executor-return": "off",
     "no-continue": "off",
-    "lines-between-class-members": "off",
-    "simple-import-sort/imports": "warn",
-    "sort-imports": "off",
-    "import/order": "off"
+    "lines-between-class-members": "off"
   },
   "globals": {
     "UndefinedKeys": true,
@@ -61,9 +59,6 @@
     "NotUndefinedKey": true,
     "Parse": true,
     "DefaultProps": true,
-    "JSX": true,
-    "ModalDefaultRef": true,
-    "logger": true,
-    "Console": true
+    "JSX": true
   }
 }
