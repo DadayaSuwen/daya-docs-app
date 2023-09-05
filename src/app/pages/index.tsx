@@ -4,14 +4,22 @@ import Menu from './components/Menu'
 import Herder from './components/Header'
 import Content from './components/Content'
 const DocsList = () => {
+  const headerList = {
+    renderLeft: <div>left</div>,
+    renderCenter: <div>center</div>,
+    renderRight: <div>fooder</div>
+  }
+
   return (
     <main>
-      <header>
-        <Herder />
+      <header className='header'>
+        <Herder renderData={headerList} />
       </header>
-      <section className='container'>
+      <section className='mian'>
         <Menu />
-        <Content />
+        <div className='container'>
+          <Content />
+        </div>
       </section>
     </main>
   )

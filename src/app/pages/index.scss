@@ -1,3 +1,13 @@
-.container {
-  font-size: 20px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  max-height: 100px;
+}
+.mian {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
