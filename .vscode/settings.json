@@ -1,0 +1,19 @@
+{
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "prettier.requireConfig": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.enable": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+}
