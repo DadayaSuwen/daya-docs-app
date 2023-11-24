@@ -1,21 +1,13 @@
 import React from 'react'
 import _ from 'lodash'
-
-interface WithBasicListCommonProps<T> {
-  children: (props: { item: T }) => React.ReactNode
-  data: T[]
-  className?: string
-  option?: {
-    width?: number | string
-  }
-}
+import { WithBasicListCommonProps } from './type'
 
 const optionDefault = {
   width: 100,
   className: ''
 }
 
-const WithBasicListCommon = <T,>(props: WithBasicListCommonProps<T>) => {
+const WithBasicListCommon = (props: WithBasicListCommonProps) => {
   const { children, data, option = optionDefault, className } = props
   const { width } = option
 

@@ -2,15 +2,14 @@ import React from 'react'
 import BasicButton from '@/app/components/BasicButton'
 import WithListCommon from '@/app/components/WithBasicListCommon'
 import './index.scss'
+import { MenuProps } from './type'
 
-const Menu = () => {
+const Menu = (props: MenuProps) => {
+  const { data, option } = props
+
   return (
     <div className='menu-container'>
-      <WithListCommon
-        className='menu-container-list'
-        option={{ width: '200px' }}
-        data={[{ title: '123' }, { title: '12233' }, { title: '12323' }]}
-      >
+      <WithListCommon className={`menu-container-list gap-${option?.gap}`} option={option} data={data}>
         {({ item }) => <BasicButton shape='round'>{item.title}</BasicButton>}
       </WithListCommon>
     </div>
