@@ -1,12 +1,16 @@
+// 顶部高度
+$top-height: 100px;
+
 .header {
   align-items: center;
   padding: 20px;
   background-color: #fff;
-  max-height: 100px;
+  max-height: $top-height;
 }
 
 .mian {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  height: calc(100vh - $top-height);
 }

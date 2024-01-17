@@ -4,10 +4,5 @@ import { WithBasicListCommonProps, MenuDataType } from '@/app/components/WithBas
 export interface MenuProps {
   data: MenuDataType[]
   className?: string
-  option?: {
-    // 列表宽度
-    width?: number | string
-    // 列表上下间距
-    gap?: number
-  }
+  style?: React.CSSProperties
 }

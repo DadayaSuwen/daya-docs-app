@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import './index.scss'
 import Input from '@/app/components/BasicInput'
@@ -15,7 +17,7 @@ const DocsList = () => {
     ),
     renderCenter: (
       <div>
-        <Input placeholder='Search' style={{ width: '20vw' }} size='large' />
+        <Input placeholder='Search' style={{ width: '20vw', minWidth: '200px' }} size='large' />
       </div>
     ),
     renderRight: <div>fooder</div>
@@ -23,16 +25,32 @@ const DocsList = () => {
 
   return (
     <main>
-      <header className='header'>
-        <Header className='flex justify-between items-center mx-28' renderData={headerList} />
-      </header>
-      <section className='mian'>
+      <Header className='header flex justify-between items-center mx-28' renderData={headerList} />
+      <section className='mian container flex justify-between mx-28'>
         <Menu
-          option={{ width: '200px', gap: 10 }}
+          style={{ maxHeight: '400px', width: '200px', gap: 20 }}
           data={[
-            { title: '列表', id: 1 },
-            { title: '列表', id: 2 },
-            { title: '列表', id: 3 }
+            {
+              title: '列表1',
+              id: 1,
+              onClick: () => {
+                console.log(1)
+              }
+            },
+            {
+              title: '列表2',
+              id: 2,
+              onClick: () => {
+                console.log(1)
+              }
+            },
+            {
+              title: '列表3',
+              id: 3,
+              onClick: () => {
+                console.log(1)
+              }
+            }
           ]}
         />
         <div className='container'>

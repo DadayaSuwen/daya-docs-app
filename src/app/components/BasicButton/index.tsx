@@ -1,18 +1,19 @@
+'use client'
+
 import React from 'react'
 import { Button } from 'antd'
+import type { ButtonProps } from 'antd/lib/button'
 import './index.scss'
 
-interface BasicButtonProps extends React.ComponentProps<typeof Button> {
+interface BasicButtonProps extends ButtonProps {
   children: React.ReactNode
 }
 
-function BasicButton(porps: BasicButtonProps) {
-  const { children } = porps
+export default function BasicButton(props: BasicButtonProps) {
+  const { children, className } = props
   return (
-    <Button {...porps} className='basic-button'>
+    <Button {...props} className={`${className} basic-button`}>
       {children}
     </Button>
   )
 }
-
-export default BasicButton

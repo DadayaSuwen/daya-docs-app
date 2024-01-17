@@ -1,18 +1,14 @@
+'use client'
+
 import React from 'react'
 import _ from 'lodash'
 import { WithBasicListCommonProps } from './type'
 
-const optionDefault = {
-  width: 100,
-  className: ''
-}
-
 const WithBasicListCommon = (props: WithBasicListCommonProps) => {
-  const { children, data, option = optionDefault, className } = props
-  const { width } = option
+  const { children, data, style, className } = props
 
   return (
-    <div className={className} style={{ width }}>
+    <div className={className} style={style}>
       {data.map(item => {
         return children({ item })
       })}

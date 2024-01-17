@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Input } from 'antd'
 import './index.scss'
@@ -7,10 +9,10 @@ interface BasicButtonProps extends React.ComponentProps<typeof Input> {
   children?: React.ReactNode
 }
 
-function BasicInput(porps: BasicButtonProps) {
-  const { children } = porps
+function BasicInput(props: BasicButtonProps) {
+  const { children } = props
   return (
-    <Input {...porps} className='basic-input rounded-full' suffix={<SearchOutlined />}>
+    <Input {...props} className='basic-input rounded-full' suffix={<SearchOutlined />}>
       {children}
     </Input>
   )
