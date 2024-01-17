@@ -3,6 +3,7 @@
 import React from 'react'
 import './index.scss'
 import Input from '@/app/components/BasicInput'
+import { MenuOutlined } from '@ant-design/icons'
 import Menu from './components/Menu'
 import Header from './components/Header'
 import Content from './components/Content'
@@ -20,7 +21,7 @@ const DocsList = () => {
         <Input placeholder='Search' style={{ width: '20vw', minWidth: '200px' }} size='large' />
       </div>
     ),
-    renderRight: <div>fooder</div>
+    renderRight: <MenuOutlined />
   }
 
   return (
