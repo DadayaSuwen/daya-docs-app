@@ -1,5 +1,6 @@
 'use client'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import React from 'react'
 import './index.scss'
 import Input from '@/app/components/BasicInput'
@@ -59,6 +60,7 @@ const DocsList = () => {
         </div>
       </section>
       <Analytics />
+      <SpeedInsights />
     </main>
   )
 }
