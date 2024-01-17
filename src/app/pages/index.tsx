@@ -1,5 +1,5 @@
 'use client'
-
+import { Analytics } from '@vercel/analytics/react'
 import React from 'react'
 import './index.scss'
 import Input from '@/app/components/BasicInput'
@@ -58,6 +58,7 @@ const DocsList = () => {
           <Content />
         </div>
       </section>
+      <Analytics />
     </main>
   )
 }
