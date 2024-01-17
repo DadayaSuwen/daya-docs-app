@@ -27,8 +27,8 @@ const DocsList = () => {
 
   return (
     <main>
-      <Header className='header flex justify-between items-center mx-28' renderData={headerList} />
-      <section className='mian container flex justify-between mx-28'>
+      <Header className='header flex justify-between items-center mx-2' renderData={headerList} />
+      <section className='mian container flex justify-between mx-2'>
         <Menu
           style={{ maxHeight: '400px', width: '200px', gap: 20 }}
           data={[
